@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Picker — Hengtai Event Photos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: #f5f6fa; padding: 40px 20px; }
+    h1 { text-align: center; color: #1a2c50; margin-bottom: 8px; }
+    p { text-align: center; color: #666; margin-bottom: 32px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; max-width: 1300px; margin: 0 auto; }
+    .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .card img { width: 100%; height: 300px; object-fit: cover; display: block; }
+    .card-body { padding: 16px; }
+    .card-body h3 { font-size: 0.95rem; color: #1a2c50; margin-bottom: 4px; }
+    .card-body p { text-align: left; font-size: 0.8rem; color: #888; margin: 0; }
+    .current { border: 3px solid #2563eb; }
+    .badge { display: inline-block; background: #2563eb; color: #fff; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px; }
+    .best { border: 3px solid #16a34a; }
+    .best-badge { display: inline-block; background: #16a34a; color: #fff; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Hengtai Event Photos — Pick One</h1>
+  <p>Photos from the Hengtai Zero-Space OPC Community event. Green border = best candidates with Jessica Chang visible. Blue border = currently used photo.</p>
+  <div class="grid">
+
+    <div class="card best">
+      <img src="assets/images/mia-chang-hengtai-interview.jpg" alt="Jessica Chang being interviewed">
+      <div class="card-body">
+        <span class="best-badge">BEST CANDIDATE</span>
+        <h3>hengtai-interview.jpg</h3>
+        <p>Jessica Chang being interviewed at the event, holding microphone. Magenta blouse. Cameraman visible on left.</p>
+      </div>
+    </div>
+
+    <div class="card best">
+      <img src="assets/images/mia-chang-hengtai-signing.jpg" alt="Jessica Chang at signing ceremony">
+      <div class="card-body">
+        <span class="best-badge">BEST CANDIDATE</span>
+        <h3>hengtai-signing.jpg</h3>
+        <p>Signing ceremony — Jessica Chang seated center in magenta blouse, holding ceremonial document.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/hengtai-onboarding-ceremony.jpg" alt="Onboarding ceremony group">
+      <div class="card-body">
+        <h3>hengtai-onboarding.jpg</h3>
+        <p>Group onboarding ceremony — 5 people. Hard to identify Jessica Chang.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/hengtai-coworking-space.jpg" alt="Co-working space interior">
+      <div class="card-body">
+        <h3>hengtai-coworking.jpg</h3>
+        <p>Co-working space interior — no people visible.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/hengtai-presenter-1.jpg" alt="Presenter at conference">
+      <div class="card-body">
+        <h3>hengtai-presenter-1.jpg</h3>
+        <p>Man presenting at conference — not Jessica Chang.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/hengtai-presenter-2.jpg" alt="Presenter different angle">
+      <div class="card-body">
+        <h3>hengtai-presenter-2.jpg</h3>
+        <p>Same presenter, different angle — not Jessica Chang.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/hengtai-building-exterior-1.jpg" alt="Building exterior">
+      <div class="card-body">
+        <h3>hengtai-building-1.jpg</h3>
+        <p>Building exterior (Citadines apartments) — no identifiable person.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/hengtai-building-exterior-2.jpg" alt="Building exterior 2">
+      <div class="card-body">
+        <h3>hengtai-building-2.jpg</h3>
+        <p>Another building exterior — person walking away, too distant.</p>
+      </div>
+    </div>
+
+    <div class="card current">
+      <img src="assets/images/mia-chang-at-computer.webp" alt="Currently used photo">
+      <div class="card-body">
+        <span class="badge">CURRENT</span>
+        <h3>mia-chang-at-computer.webp</h3>
+        <p>Currently used on the Press page — Jessica Chang at computer desk.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

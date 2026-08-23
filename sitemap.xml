@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English pages -->
+  <url>
+    <loc>https://moonbayopc.netlify.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/services.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/process.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/process.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/process.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/why-suzhou.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/why-suzhou.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/why-suzhou.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/what-is-opc.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/what-is-opc.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/what-is-opc.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/resources.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/resources.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/resources.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/press.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/press.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/press.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/community.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/community.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/community.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/en/jiangsu-ai-opc-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/jiangsu-ai-opc-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/jiangsu-ai-opc-policy.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Chinese pages -->
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/services.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/process.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/process.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/process.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/why-suzhou.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/why-suzhou.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/why-suzhou.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/what-is-opc.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/what-is-opc.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/what-is-opc.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/resources.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/resources.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/resources.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/press.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/press.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/press.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/community.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/community.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/community.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://moonbayopc.netlify.app/zh/jiangsu-ai-opc-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moonbayopc.netlify.app/en/jiangsu-ai-opc-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://moonbayopc.netlify.app/zh/jiangsu-ai-opc-policy.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
