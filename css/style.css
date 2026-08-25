@@ -3087,6 +3087,37 @@ p {
 /* ============================================================
    PRESS DETAIL PAGE
    ============================================================ */
+
+/* Article detail pages — no hero, content starts right after header */
+.press-detail-page {
+  padding-top: 0;
+  padding-bottom: var(--space-4xl);
+}
+
+.press-detail-page .press-detail {
+  padding-top: var(--space-xl);
+  position: relative;
+}
+
+/* Blue accent line as visual transition from header */
+.press-detail-page .press-detail::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--blue);
+  border-radius: 2px;
+  margin-bottom: var(--space-lg);
+}
+
+.press-detail-page .press-detail__back {
+  margin-bottom: var(--space-md);
+}
+
+.press-detail-page .press-detail h1 {
+  font-size: 2.25rem;
+}
+
 .press-detail {
   max-width: 800px;
   margin: 0 auto;
