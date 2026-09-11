@@ -1269,6 +1269,195 @@ p {
 .reveal-stagger > .reveal:nth-child(6) { transition-delay: 500ms; }
 
 /* ============================================================
+   AI EVENT SERIES / EVENTS & COMMUNITY
+   ============================================================ */
+.events-section {
+  background: var(--bg-light);
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* Featured event — first card, navy branded */
+.event-featured {
+  position: relative;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 0;
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-base);
+}
+
+.event-featured:hover {
+  transform: translateY(-4px);
+}
+
+.event-featured__media {
+  position: relative;
+  min-height: 240px;
+}
+
+.event-featured__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-featured__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 40%, var(--navy) 100%);
+}
+
+.event-featured__body {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.event-featured__body h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.event-featured__desc {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.event-featured__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.event-featured__meta svg {
+  width: 15px;
+  height: 15px;
+  vertical-align: -3px;
+  margin-right: 4px;
+}
+
+/* Standard event rows */
+.event-row {
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-base);
+}
+
+.event-row:hover {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.event-row__date {
+  text-align: center;
+  border-right: 1px solid var(--border);
+  padding-right: var(--space-lg);
+}
+
+.event-row__date-month {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.event-row__date-day {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.1;
+}
+
+.event-row__date-year {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.event-row__body h4 {
+  font-size: 1.0625rem;
+  margin-bottom: var(--space-xs);
+}
+
+.event-row__body p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.event-row__link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.event-row__link:hover {
+  color: var(--blue-hover);
+}
+
+.event-row__link svg {
+  width: 15px;
+  height: 15px;
+  transition: transform var(--transition-fast);
+}
+
+.event-row__link:hover svg {
+  transform: translateX(3px);
+}
+
+/* Badge */
+.event-badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eaf5ff;
+  color: var(--blue);
+  border: 1px solid rgba(32, 127, 212, 0.25);
+}
+
+.event-featured .event-badge {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ============================================================
    RESPONSIVE BREAKPOINTS
    ============================================================ */
 
@@ -1531,6 +1720,50 @@ p {
 @media (max-width: 992px) {
   .coverage-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .event-featured__media {
+    min-height: 180px;
+  }
+
+  .event-featured__media::after {
+    background: linear-gradient(180deg, transparent 40%, var(--navy) 100%);
+  }
+}
+
+/* --- 720px --- */
+@media (max-width: 720px) {
+  .event-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .event-row__date {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-right: 0;
+    padding-bottom: var(--space-sm);
+    text-align: left;
+  }
+
+  .event-featured__body {
+    padding: var(--space-lg);
+  }
+
+  .event-featured__body h3 {
+    font-size: 1.25rem;
+  }
+
+  .event-featured__meta {
+    gap: var(--space-sm);
+    flex-direction: column;
   }
 }
 
