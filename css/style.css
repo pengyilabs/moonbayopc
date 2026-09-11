@@ -4530,6 +4530,18 @@ p {
   display: block;
 }
 
+/* Initials-only avatar — used when no real photo is available */
+.event-speaker__avatar--initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--navy) 0%, #123a63 100%);
+}
+
 .event-speaker__name {
   font-family: var(--font-heading);
   font-weight: 700;
