@@ -4403,9 +4403,23 @@ p {
   z-index: 2;
   max-width: 860px;
   margin: 0 auto;
-  padding: var(--space-4xl) var(--container-padding) var(--space-3xl);
+  /* top padding clears the fixed header (--header-height) with breathing room */
+  padding: calc(var(--header-height) + 35px) var(--container-padding) var(--space-3xl);
   color: var(--white);
   width: 100%;
+}
+
+/* Back button + status badge sit in a single aligned row at the same height */
+.event-detail-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+.event-detail-hero .event-badge {
+  background: rgba(255,255,255,0.15);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.35);
 }
 
 .event-detail-hero__back {
@@ -4417,7 +4431,7 @@ p {
   font-weight: 500;
   font-size: 0.875rem;
   text-decoration: none;
-  margin-bottom: var(--space-xl);
+  /* margin-bottom moved to .event-detail-hero__meta wrapper */
   transition: color var(--transition-fast);
 }
 
