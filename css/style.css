@@ -4192,7 +4192,8 @@ p {
 .events-hero {
   background: linear-gradient(135deg, var(--navy) 0%, #123a63 100%);
   color: var(--white);
-  padding: var(--space-4xl) 0 var(--space-3xl);
+  /* top padding clears the fixed header (--header-height) with breathing room */
+  padding: calc(var(--header-height) + 35px) 0 var(--space-3xl);
   text-align: center;
 }
 
