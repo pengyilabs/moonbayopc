@@ -193,4 +193,52 @@
     });
   });
 
+  /* ----------------------------------------------------------
+     Lightbox — photo gallery enlargement
+     ---------------------------------------------------------- */
+  (function initLightbox() {
+    var triggers = document.querySelectorAll('.lightbox-trigger');
+    if (!triggers.length) return;
+
+    // Create overlay once
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.innerHTML =
+      '<button class="lightbox-close" aria-label="Close">&times;</button>' +
+      '<img src="" alt="">' +
+      '<div class="lightbox-caption"></div>';
+    document.body.appendChild(overlay);
+
+    var lbImg = overlay.querySelector('img');
+    var lbCaption = overlay.querySelector('.lightbox-caption');
+    var lbClose = overlay.querySelector('.lightbox-close');
+
+    function open(trigger) {
+      lbImg.src = trigger.src;
+      lbImg.alt = trigger.alt;
+      lbCaption.textContent = trigger.getAttribute('data-caption') || trigger.alt || '';
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+      lbImg.src = '';
+    }
+
+    triggers.forEach(function (img) {
+      img.addEventListener('click', function () { open(this); });
+    });
+
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay || e.target === lbImg || e.target === lbClose) close();
+    });
+    lbClose.addEventListener('click', close);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) close();
+    });
+  })();
+
 })();
