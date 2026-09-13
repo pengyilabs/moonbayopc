@@ -5555,3 +5555,311 @@ p {
 .lightbox-trigger {
   cursor: zoom-in;
 }
+
+/* ============================================================
+   PREMIUM DESIGN ELEVATION — Global Professional Refinement
+   Serif display type · ink + gold palette · refined polish
+   ============================================================ */
+:root {
+  /* Refined type scale */
+  --font-heading: 'Fraunces','Noto Serif SC','Source Han Serif SC','Songti SC','SimSun',serif;
+  --font-body: 'Archivo','Noto Sans SC','Source Han Sans SC','Microsoft YaHei','PingFang SC',sans-serif;
+
+  /* Premium palette additions */
+  --ink: #10233c;
+  --gold: #c8a45c;
+  --gold-soft: rgba(200, 164, 92, 0.14);
+  --gold-line: rgba(200, 164, 92, 0.45);
+
+  /* Refined text */
+  --text-primary: #15263a;
+  --text-secondary: #46586c;
+
+  /* Softer, deeper shadows */
+  --shadow-card: 0 1px 2px rgba(16, 35, 60, 0.05), 0 8px 24px rgba(16, 35, 60, 0.05);
+  --shadow-md: 0 6px 16px rgba(16, 35, 60, 0.09);
+  --shadow-lg: 0 18px 48px rgba(16, 35, 60, 0.14);
+
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+}
+
+/* --- Typography refinements --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+h1 { font-weight: 500; }
+h2 { font-weight: 500; }
+h3 { font-family: var(--font-body); font-weight: 600; letter-spacing: 0; }
+
+body {
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+  font-feature-settings: 'liga' 1, 'kern' 1;
+}
+
+/* --- Header refinement --- */
+.header {
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  backdrop-filter: saturate(1.4) blur(10px);
+  box-shadow: 0 1px 0 rgba(16, 35, 60, 0.06), 0 8px 30px rgba(16, 35, 60, 0.04);
+}
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+}
+.logo span { color: var(--gold); }
+
+/* --- Buttons: refined, deeper press + lift --- */
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px rgba(16, 35, 60, 0.06);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+              background var(--transition-fast), color var(--transition-fast);
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+.btn-primary {
+  background: linear-gradient(180deg, #227eb9 0%, var(--blue) 100%);
+  box-shadow: 0 4px 14px rgba(32, 108, 178, 0.28);
+}
+.btn-primary:hover {
+  background: linear-gradient(180deg, #18679f 0%, #0d2844 100%);
+  box-shadow: 0 8px 22px rgba(13, 40, 68, 0.3);
+}
+.btn-outline-primary {
+  border-radius: var(--radius-md);
+  border-width: 1.5px;
+}
+.btn-outline-white {
+  border-radius: var(--radius-md);
+  border-width: 1.5px;
+  background: rgba(255, 255, 255, 0.06);
+}
+.btn-outline-white:hover {
+  background: var(--white);
+  color: var(--navy);
+}
+
+/* --- Section labels: premium eyebrow with gold rule --- */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--gold);
+}
+.section-label::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--gold-line);
+}
+
+/* --- Homepage hero: refined overlay, eyebrow, title --- */
+.hero-content::before {
+  content: 'Suzhou Industrial Park · China';
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gold);
+  margin-bottom: var(--space-lg);
+}
+.hero-overlay {
+  background: linear-gradient(105deg, rgba(8, 24, 42, 0.92) 0%, rgba(10, 30, 52, 0.78) 45%, rgba(13, 40, 68, 0.35) 78%, rgba(13, 40, 68, 0.2) 100%);
+}
+.hero h1 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.hero .hero-subtitle {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* --- Stats bar: refined numerals --- */
+.stats-bar {
+  background: var(--navy);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.stat-number {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.stat-item .stat-label {
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+/* --- Cards: hairline, refined hover --- */
+.service-card,
+.coverage-card,
+.feature-card,
+.credential-card,
+.event-row {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(16, 35, 60, 0.08);
+  box-shadow: var(--shadow-card);
+}
+.service-card:hover,
+.coverage-card:hover,
+.feature-card:hover,
+.credential-card:hover,
+.event-row:hover {
+  border-color: rgba(200, 164, 92, 0.5);
+  box-shadow: 0 16px 40px rgba(16, 35, 60, 0.12);
+  transform: translateY(-4px);
+}
+.credential-card .credential-card__icon,
+.service-card .icon-circle,
+.feature-card__icon {
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(32, 108, 178, 0.12);
+}
+
+/* --- Process steps: refined numerals --- */
+.step-number {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  background: var(--navy);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 20px rgba(13, 40, 68, 0.28);
+}
+
+/* --- Press / media on navy --- */
+.press-section {
+  background:
+    radial-gradient(120% 120% at 100% 0%, rgba(32, 127, 212, 0.14) 0%, transparent 55%),
+    radial-gradient(120% 120% at 0% 100%, rgba(200, 164, 92, 0.08) 0%, transparent 50%),
+    var(--navy);
+}
+.press-quote {
+  border-radius: var(--radius-lg);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.press-quote::before {
+  content: '\201C';
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  line-height: 1;
+  color: var(--gold);
+  display: block;
+  margin-bottom: -6px;
+}
+
+/* --- CTA band: rich gradient + gold braces --- */
+.cta-band {
+  background:
+    radial-gradient(90% 160% at 10% 0%, rgba(200, 164, 92, 0.18) 0%, transparent 55%),
+    linear-gradient(120deg, #0d2844 0%, #155f9e 55%, #1d8fd6 100%);
+}
+.cta-band .btn-primary {
+  background: var(--white);
+  color: var(--navy);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.cta-band .btn-primary:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+/* --- Events: refined badges & featured card --- */
+.event-badge {
+  background: var(--gold-soft);
+  color: #9a7a35;
+  border-color: var(--gold-line);
+}
+.event-featured {
+  border-radius: var(--radius-xl);
+}
+
+/* --- Page hero (subpages): refined gradient & title --- */
+.page-hero {
+  background:
+    radial-gradient(110% 160% at 100% -20%, rgba(32, 127, 212, 0.35) 0%, transparent 55%),
+    radial-gradient(90% 120% at 0% 120%, rgba(200, 164, 92, 0.14) 0%, transparent 50%),
+    linear-gradient(120deg, #0a1d33 0%, #0d2844 55%, #145684 100%);
+}
+.page-hero__title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.page-hero__breadcrumb {
+  letter-spacing: 0.02em;
+}
+.page-hero__breadcrumb a:hover { opacity: 1; }
+
+/* --- Imagery --- */
+.why-suzhou-image,
+.community-image,
+.city-showcase {
+  border-radius: var(--radius-xl);
+}
+.coverage-card__image,
+.event-featured__media img {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* --- Footer refinement --- */
+.footer { background: var(--navy); }
+.footer-brand .footer-logo {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.footer-brand .footer-logo span { color: var(--gold); }
+.footer-col h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+.social-links a { border-radius: 50%; }
+.social-links a:hover { background: var(--gold); }
+
+/* --- Soften reveal motion --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- CTA links refinement --- */
+.cta-link {
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* --- Media outlet tiles on navy --- */
+.media-outlet .outlet-name { color: rgba(255, 255, 255, 0.7); }
+
+@media (max-width: 768px) {
+  .hero-content::before { letter-spacing: 2px; }
+}
