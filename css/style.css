@@ -3457,6 +3457,22 @@ p {
   display: block;
 }
 
+.press-detail__image video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+
+.press-detail__caption {
+  margin: 0;
+  padding: var(--space-sm) var(--space-md);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  background: var(--white);
+}
+
 .press-detail__summary {
   font-size: 1.125rem;
   line-height: 1.7;
