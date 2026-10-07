@@ -3345,7 +3345,8 @@ p {
 
 /* Article detail pages — no hero, content starts right after header */
 .press-detail-page {
-  padding-top: 0;
+  /* clear the fixed header (--header-height) so the back link/badge aren't hidden behind it */
+  padding-top: var(--header-height);
   padding-bottom: var(--space-4xl);
 }
 
